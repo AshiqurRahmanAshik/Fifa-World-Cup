@@ -75,6 +75,28 @@ main button:nth-child(3) {
   background-color: red;
   color: white;
 }
+.card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.button_transfer {
+  display: block;
+  width: 50%;
+  margin: 0.5rem 0;
+}
+.cards p {
+  font-weight: bold;
+}
+.cards i {
+  margin: 0.5rem;
+}
+.cards img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.view_button {
+  width: 50%;
+}
 /* Tablet */
 @media (min-width: 576px) {
   .header_container {
@@ -110,11 +132,38 @@ main button:nth-child(3) {
     margin: 1rem auto;
     font-weight: 700;
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .button_transfer {
+    display: block;
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+  .cards p {
+    font-weight: bold;
+  }
+  .cards i {
+    margin: 0.5rem;
+  }
+  .cards img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .view_button {
+    width: 30%;
+  }
 }
 
 /* Laptop */
 @media (min-width: 992px) {
   .header_container {
     margin: 5rem;
+  }
+  .view_button {
+    width: 30%;
   }
 }
