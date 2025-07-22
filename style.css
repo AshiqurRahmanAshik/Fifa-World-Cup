@@ -9,7 +9,7 @@ body {
 }
 header,
 main {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -92,11 +92,13 @@ main button:nth-child(3) {
 }
 .cards img {
   width: 100%;
+  height: 500px;
   border-radius: 1rem;
 }
 .view_button {
   width: 50%;
 }
+
 /* Tablet */
 @media (min-width: 576px) {
   .header_container {
@@ -151,6 +153,7 @@ main button:nth-child(3) {
   }
   .cards img {
     width: 100%;
+    object-fit: cover;
     border-radius: 1rem;
   }
   .view_button {
